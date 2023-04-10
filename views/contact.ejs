@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form-style.css">
+
+</head>
+<body>
+    <!-- <section id="header">
+        <a href="#" id="logo">FREAK MIND</a>
+    
+        <div>
+          <ul id="navbar" class="topnav">
+            <a href="#" id="close"><span class="material-symbols-outlined">close</span></a>
+            <li>
+              <a href="index">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Services</a>
+            </li>
+            <li>
+              <a style="color: white;" id="contactbtn" href="contact">Contact Support</a>
+            </li>
+          </ul>
+        </div>
+        <div id="mobile">
+          <span id="bar" class="material-symbols-outlined">menu</span>
+        </div>
+      </section> -->
+      <%- include('_header');%>
+    <form action="/set-data" method="POST">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="number" name="phone" placeholder="Enter Phone" required>
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" id="" value="male"><label for="gender">Male</label>
+        <input type="radio" name="gender" id="" value="female"><label for="gender">Female</label>
+        <label for="lang">Select Language: </label>
+        <select name="lang" id="">
+            <option value="c++">C++</option>
+            <option value="python">Python</option>
+            <option value="js">Js</option>
+        </select>
+        <input type="checkbox" name="agree" id="" required><label style="margin-top: 0;" for="agree">I Agree</label>
+        <button type="submit">Submit</button>
+</form>
+    <a id="details" href="details">Check the Details which is filled in form.</a>
+
+</body>
+</html>
